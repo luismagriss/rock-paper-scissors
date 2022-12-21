@@ -42,7 +42,7 @@ function playRound(playersChoice, computerChoice) {
         computerPoints = computerPoints + 1;
         console.log("You've lost! Rock beats Scissors!");
     } else {
-        console.log("It was a draw.")
+        console.log("It was a tie.")
     }
 }
 
@@ -50,18 +50,21 @@ function game() {
     for (i = 0; i < 5; i++) {
         playRound();
     }
-    
-   
+    console.log("Player's points: " + playerPoints)
+    console.log("Computer's points: " + computerPoints)
+}
+
+function pointsCounter() {
+    if (playerPoints > computerPoints) {
+        console.log("You've won by " + playerPoints + " to " + computerPoints)
+    } else if (computerPoints > playerPoints) {
+        console.log("You've lost by " + playerPoints + " to " + computerPoints)
+    } else {
+        console.log("The game was a draw")
+    }
 }
 
 game();
- console.log("Player's points: " + playerPoints)
- console.log("Computer's points: " + computerPoints)
+ 
+pointsCounter();
 
-if (playerPoints > computerPoints) {
-    console.log("You've won by " + playerPoints + " to " + computerPoints)
-} else if (computerPoints > playerPoints) {
-    console.log("You've lost by " + playerPoints + " to " + computerPoints)
-} else {
-    console.log("The game is tied")
-}
