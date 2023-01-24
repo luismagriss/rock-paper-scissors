@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Rock Paper Scissors game played into the console.
+Rock Paper Scissors game played in the console.
