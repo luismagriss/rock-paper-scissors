@@ -66,24 +66,3 @@ function playRound(playersChoice, computerChoice) {
         computerPoints = 0;
     }
 }
-
-
-function pointsCounter() {
-    for (i = 0; i < 5; i ++) {
-        if (playerPoints > computerPoints) {
-            console.log("You've won by " + playerPoints + " to " + computerPoints)
-        } else if (computerPoints > playerPoints) {
-            console.log("You've lost by " + playerPoints + " to " + computerPoints)
-        } else {
-            console.log("The game was a draw")
-        }
-    }
-    
-}
-
-;
-
-
- 
-
-
