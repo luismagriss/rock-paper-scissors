@@ -15,6 +15,8 @@ resultDiv.appendChild(results);
 bod.appendChild(divPoints);
 divPoints.appendChild(points);
 divPoints.appendChild(finalResult);
+points.classList.add('points')
+finalResult.classList.add('finalResult')
 
 
 function getComputerChoice() {    
@@ -57,10 +59,14 @@ function playRound(playersChoice, computerChoice) {
     }
     points.textContent = "Player points: " + playerPoints + " // " + computerPoints + ": Computer Points";
     if (playerPoints === 5) {
+        finalResult.classList.remove('lost')
+        finalResult.classList.add('win')
         finalResult.textContent = "You've won!"
         playerPoints = 0;
         computerPoints = 0;
     } else if (computerPoints === 5) {
+        finalResult.classList.remove('win')
+        finalResult.classList.add('lost')
         finalResult.textContent = "Computer wins!"
         playerPoints = 0;
         computerPoints = 0;

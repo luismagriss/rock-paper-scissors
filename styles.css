@@ -1,0 +1,62 @@
+html {
+    background-color: #F99B7D;
+}
+
+#headline {
+    color: #B04759;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 25px;
+    height: 75px;
+    width: 150px;
+}
+
+#rock {
+    background-color: #00FAA8;
+}
+
+#paper {
+    background-color: #00FAA8;
+}
+
+#scissor {
+    background-color: #00FAA8;
+}
+
+.buttons {
+    padding: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+}
+
+.win {
+    color: blue;
+}
+
+.lost {
+    color: red;
+}
+
+.finalResult {
+    display: flex;
+    justify-content: center;
+}
